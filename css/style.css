@@ -1,0 +1,39 @@
+/* HEADER */
+header {
+    width: 100%;
+    z-index: 998;
+    display: fixed;
+}
+
+
+/* SIDEBAR */
+.sidebar {
+    width: 10%;
+    height: 100vh;
+    background-color: rgb(255, 151, 151);
+    padding: 2rem;
+    z-index: 999;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sidebar img {
+    width: 3rem;
+}
+
+.main-content {
+    width: 90%;
+}
+
+.playlist .col {
+    width: 49%;
+}
+
+.playlist img {
+    width: 100%;
+}
+
+
+
+
+
