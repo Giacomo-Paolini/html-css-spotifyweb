@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/common.css">
     <title>Spotify Web</title>
@@ -11,15 +16,15 @@
 <body>
 
     <!-- SIDEBAR -->
-    <div class="container flex">
-        <section class="sidebar flex flex-column justify-between">
-            <div>
+    <div class="container-sidebar flex">
+        <section class="sidebar flex flex-column justify-between align-items-center">
+            <div class="flex flex-column">
                 <img src="./img/logo-small.svg" alt="logo">
                 <img src="./img/home.svg" alt="home">
                 <img src="./img/search.svg" alt="search">
                 <img src="./img/libreria.svg" alt="library">
             </div>
-            <div>
+            <div class="flex flex-column">
                 <img src="./img/download.svg" id="icon-download" alt="download">
                 <img src="./img/profile.svg" id="icon-profile" alt="profile">
             </div>
@@ -32,66 +37,62 @@
 
             <header>
                 <div class="bg-black flex flex-end padding-2">
-                    <button>EFFETTURA L'UPGRADE</button>
+                    <button>EFFETTUA L'UPGRADE</button>
                 </div>
             </header>
         
             <main>
-                <div class="container-playlist">          
+                <div class="container-playlist">
+                    
                     <!-- CENTRAL NAV -->
-                    <section class="main-content">
-                        <ul class="flex justify-around padding-2 wrap">
-                            <li><a href="#">IN EVIDENZA</a></li>
-                            <li><a href="#">PODCAST</a></li>
-                            <li><a href="#">CLASSIFICHE</a></li>
-                            <li><a href="#">GENERI E MOOD</a></li>
-                            <li><a href="#">NUOVE USCITE</a></li>
-                            <li><a href="#">SCOPRI</a></li>
-                        </ul>
+                    <section class="central-nav">
+                        <nav>
+                            <ul class="col flex justify-around padding-2 wrap gap-1">
+                                <li class="flex flex-column align-items-center">
+                                    <a href="#">IN EVIDENZA</a>
+                                    <hr class="green-line">
+                                </li>
+                                <li><a href="#">PODCAST</a></li>
+                                <li><a href="#">CLASSIFICHE</a></li>
+                                <li><a href="#">GENERI E MOOD</a></li>
+                                <li><a href="#">NUOVE USCITE</a></li>
+                                <li><a href="#">SCOPRI</a></li>
+                            </ul>
+                        </nav>
                     </section>
                     <!-- PLAYLIST -->
                     <section class="playlist">
                         <h1 class="padding-1">Recently Played</h1>
-                        <div class="recently-played text-center flex wrap justify-between">
+                        <div class="recently-played text-center flex wrap justify-between align-items-start">
                             <div class="col padding-1">
                                 <img src="./img/metal_lifting.jpg" alt="">
-                                <h3>Heavy Metal</h3>
-                                <h4>Subtitle</h4>
+                                <h3 class="margin-top1">Heavy Metal</h3>
+                                <h4 class="margin-top1">Subtitle</h4>
                             </div>
                             <div class="col padding-1">
-                                <img src="./img/metal_lifting.jpg" alt="">
-                                <h3>Heavy Metal</h3>
-                                <h4>Subtitle</h4>
+                                <img src="./img/stranger.jpeg" alt="">
+                                <h3 class="margin-top1">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
+                                <h4 class="margin-top1">Kyle Dixon & Mihchael Stein</h4>
                             </div>
                             <div class="col padding-1">
-                                <img src="./img/metal_lifting.jpg" alt="">
-                                <h3>Heavy Metal</h3>
-                                <h4>Subtitle</h4>
+                                <img src="./img/aquietplace.jpeg" alt="">
+                                <h3 class="margin-top1">A quiet place</h3>
+                                <h4 class="margin-top1">Subtitle</h4>
                             </div>
                             <div class="col padding-1">
-                                <img src="./img/metal_lifting.jpg" alt="">
-                                <h3>Heavy Metal</h3>
-                                <h4>Subtitle</h4>
+                                <img src="./img/split.jpeg" alt="">
+                                <h3 class="margin-top1">Split</h3>
+                                <h4 class="margin-top1">Subtitle</h4>
                             </div>
                             <div class="col padding-1">
-                                <img src="./img/metal_lifting.jpg" alt="">
-                                <h3>Heavy Metal</h3>
-                                <h4>Subtitle</h4>
+                                <img src="./img/cure.jpeg" alt="">
+                                <h3 class="margin-top1">A cure for wellness</h3>
+                                <h4 class="margin-top1">Subtitle</h4>
                             </div>
                             <div class="col padding-1">
-                                <img src="./img/metal_lifting.jpg" alt="">
-                                <h3>Heavy Metal</h3>
-                                <h4>Subtitle</h4>
-                            </div>
-                            <div class="col padding-1">
-                                <img src="./img/metal_lifting.jpg" alt="">
-                                <h3>Heavy Metal</h3>
-                                <h4>Subtitle</h4>
-                            </div>
-                            <div class="col padding-1">
-                                <img src="./img/metal_lifting.jpg" alt="">
-                                <h3>Heavy Metal</h3>
-                                <h4>Subtitle</h4>
+                                <img src="./img/sinister.jpeg" alt="">
+                                <h3 class="margin-top1">Sinister</h3>
+                                <h4 class="margin-top1">Subtitle</h4>
                             </div>
                         </div>
                     </section>
@@ -101,8 +102,24 @@
     </div>
     
     <footer>
-        <div class="container-footer">
-
+        <div class="flex justify-between align-items-center container-footer">
+            <div class="col-big-footer flex justify-between gap align-items-center">
+                <div class="col">
+                    <img src="./img/sinister.jpeg" alt="sinister">
+                </div>
+                <div class="col flex flex-column gap0">
+                    <h3>Sinister</h3>
+                    <small>Brano</small>
+                    <small>Nome</small>
+                </div>
+                <div class="col-small flex flex-column gap">
+                    <i class="fa-regular fa-heart footer-icon"></i>
+                    <i class="fa-regular fa-folder footer-icon"></i>
+                </div>
+            </div>
+            
+            <div></div>
+            <div></div>
         </div>
     </footer>
 

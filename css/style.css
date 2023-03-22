@@ -1,35 +1,47 @@
-/* HEADER */
+:root {
+    --primary-col: #141922; /* main */
+    --primary-col-light: #D2D2D2; /* icone */
+    --secondary-col: #7C7E83; /* nav main / sottotitoli / footer icon */ 
+    --secondary-col-light: #282828; /* footer */
+}
+
+/************ HEADER ************/
 header {
     width: 100%;
     z-index: 998;
-    display: fixed;
 }
 
+header button {
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    padding: 1rem;
+    border-radius: 50px;
+}
+
+/************ MAIN ************/
 main {
     overflow-y: scroll;
+    background-color: var(--primary-col);
 }
 
 /* SIDEBAR */
-
-.container {
+.container-sidebar {
     height: calc(100vh - 10vh);
 }
+
 .sidebar {
     width: 10%;
-    background-color: rgb(9, 236, 58);
-    padding: 2rem;
+    background-color: black;
+    padding: 1.5rem;
     z-index: 999;
     justify-content: flex-start;
     align-items: center;
 }
 
 .sidebar img {
-    width: 2.5rem;
+    width: 1.8rem;
     margin-bottom: 1rem;
-}
-
-.main-content {
-    width: 90%;
 }
 
 #icon-profile {
@@ -40,25 +52,83 @@ main {
 }
 
 #icon-download {
-    width: 2rem;
-    margin-left: 0.2rem;
+    width: 1.4rem;
+}
+
+/* CENTRAL NAV */
+.central-nav {
+    line-height: 2rem;
+}
+
+.central-nav a, .central-nav li {
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--secondary-col);
+}
+
+.green-line {
+    width: 2.5rem;
+    border: 1.5px solid #8FD12C;
+}
+
+.central-nav .li {
+    width: calc(100% / 1 - 1rem);
 }
 
 /* PLAYLIST */
 .playlist .col {
-    width: 49%;
+    width: calc(100% / 2);
 }
 
 .playlist img {
     width: 100%;
 }
 
+.playlist h3 {
+    font-size: small;
+    font-weight: 900;
+    color: white;
+}
+
+.playlist h4 {
+    font-size: small;
+    color: var(--secondary-col);
+}
+
 /* FOOTER */
 .container-footer {
     height: 10vh;
-    background-color: rgb(131, 131, 131);
+    background-color: var(--secondary-col-light);
+    padding: 0.5rem;
 }
 
+footer img {
+    width: 100%;
+}
 
+footer h3 {
+    color: white;
+    font-size: small;
+}
 
+footer small {
+    font-size: smaller;
+    color: var(--secondary-col);
+}
 
+.footer-icon {
+    color: var(--secondary-col);
+    font-size: 1.2rem;
+}
+
+footer .col {
+    width: calc(100% / 3);
+}
+
+.col-small {
+    width: 10%;
+}
+
+.col-big-footer {
+    width: calc(100% / 3);
+}
