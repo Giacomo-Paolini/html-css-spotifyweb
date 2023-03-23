@@ -19,18 +19,42 @@
     <main>
         <!-- SIDEBAR -->
         <div class="container-sidebar flex">
-            <nav class="sidebar flex flex-column justify-between align-items-center">
-                <div class="flex flex-column">
-                    <img src="./img/logo-small.svg" alt="logo">
-                    <img src="./img/home.svg" alt="home">
-                    <img src="./img/search.svg" alt="search">
-                    <img src="./img/libreria.svg" alt="library">
-                </div>
-                <div class="flex flex-column">
-                    <img src="./img/download.svg" id="icon-download" alt="download">
-                    <img src="./img/profile.svg" id="icon-profile" alt="profile">
-                </div>
-            </nav>
+            
+                <nav id="nav-small" class="sidebar flex flex-column justify-between align-items-center">
+                    <div class="flex flex-column">
+                        <a href="#"><img src="./img/logo-small.svg" alt="logo"></a>
+                        <a href="#"><img src="./img/home.svg" alt="home"></a>
+                        <a href="#"><img src="./img/search.svg" alt="search"></a>
+                        <a href="#"><img src="./img/libreria.svg" alt="library"></a>
+                    </div>
+                    <div class="flex flex-column">
+                        <a href="#"><img src="./img/download.svg" id="icon-download" alt="download"></a>
+                        <a href="#"><img src="./img/profile.svg" id="icon-profile" alt="profile"></a>
+                    </div>
+                </nav>
+
+                <nav id="nav-larger" class="sidebar-larger flex flex-column justify-between align-items-center">
+                    <div class="flex flex-column">
+                        <a href="#"><img src="./img/logo.svg" alt="logo"></a>
+                        <div class="text-center">
+                            <a href="#"><img src="./img/home.svg" alt="home"> Home</a>
+                        </div>
+                        <a href="#"><img src="./img/search.svg" alt="search"> Cerca</a>
+                        <a href="#"><img src="./img/libreria.svg" alt="library"> La tua libreria</a>
+                        <a href="#"><h3>PLAYLIST</h3></a>
+                        <a href="#"><i class="fa-solid fa-square-plus"></i> Crea Playlist</a>
+                        <h5>Nome Playlist</h5>
+                        <h5>Nome Playlist</h5>
+                        <h5>Nome Playlist</h5>
+                        <h5>Nome Playlist</h5>
+                        <h5>Nome Playlist</h5>
+                    </div>
+                    <div class="flex flex-column">
+                        <a href="#"><img src="./img/download.svg" id="icon-download" alt="download"> Installa app</a>
+                        <hr>
+                        <a href="#"><img src="./img/profile.svg" id="icon-profile" alt="profile"> John Doe</a>
+                    </div>
+                </nav>
 
             <!-- CONTAINER MAIN -->
             <div class="overflow-y flex flex-column">
@@ -47,7 +71,7 @@
                 
                     <section class="central-nav">
                         <nav>
-                            <ul class="col flex justify-around padding-2 wrap gap-1">
+                            <ul class="col flex justify-evenly padding-2 wrap gap-1">
                                 <li class="flex flex-column align-items-center">
                                     <a href="#">IN EVIDENZA</a>
                                     <hr class="green-line">

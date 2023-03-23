@@ -8,10 +8,11 @@
 /************ SIDEBAR ************/
 .container-sidebar {
     height: calc(100vh - 10vh);
+    width: 100vw;
 }
 
 .sidebar {
-    width: 48px;
+    max-width: 48px;
     background-color: black;
     padding: 1.5rem;
     z-index: 999;
@@ -19,8 +20,21 @@
     align-items: center;
 }
 
+#nav-larger {
+    display: none;
+}
+
+.sidebar-larger {
+    min-width: 200px;
+    background-color: pink;
+    padding: 1.5rem;
+    z-index: 999;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .sidebar img {
-    width: 1.8rem;
+    width: 1.5rem;
     margin-bottom: 1rem;
 }
 
@@ -33,6 +47,11 @@
 
 #icon-download {
     width: 1.4rem;
+}
+
+#nav-larger img {
+    width: 1.5rem;
+    display: inline-block;
 }
 
 /************ CALL TO ACTION ************/
@@ -135,4 +154,39 @@ footer .col {
 
 /************ MEDIA QUERY ************/
 
+/********* MEDIA QUERIES *********/
+/* XS - MOBILE FIRST */
+/* body.debug {
+    background: red;
+} */
 
+/* SM - SMARTPHONE */
+@media screen and (min-width: 480px) {
+    #nav-small {
+        display: none;
+    }
+    #nav-larger {
+        display: block;
+        min-width: 200px;
+    }
+    .CTA {
+        width: calc(100% - 200px);
+        z-index: 998;
+        position: fixed;
+    }
+}
+
+/* MD - TABLET */
+@media screen and (min-width: 768px) {
+
+}
+
+/* LG - DESKTOP */
+@media screen and (min-width: 992px) {
+
+}
+
+/* XL - LARGE DESKTOP */
+@media screen and (min-width: 1201px) {
+
+}

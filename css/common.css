@@ -42,6 +42,10 @@
 
 .scroll-padding-top { scroll-padding-top: 2rem; }
 
+.vertical-center {
+    vertical-align: center;
+}
+
 
 /************ COLORS ************/
 
@@ -88,6 +92,10 @@
 
 .justify-around {
     justify-content: space-around;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
 }
 
 .align-stretch {
