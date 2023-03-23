@@ -38,6 +38,10 @@
 
 .gap-1 { gap: 1rem; } 
 
+.overflow-y { overflow-y: scroll; }
+
+.scroll-padding-top { scroll-padding-top: 2rem; }
+
 
 /************ COLORS ************/
 
@@ -55,10 +59,6 @@
 
 .flex {
     display: flex;
-}
-
-.fixed {
-    display: fixed;
 }
 
 .flex-column {
