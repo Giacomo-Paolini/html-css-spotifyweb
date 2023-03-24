@@ -57,11 +57,11 @@
 }
 
 .height30 {
-    height: calc(90vh - 60vh);
+    height: 30vh;
 }
 
 .height50 {
-    height: calc(60vh - 10vh);
+    height: 50vh;
 }
 
 .width100 {
