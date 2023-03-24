@@ -1,7 +1,7 @@
 /********* MEDIA QUERIES *********/
 /* XS - MOBILE FIRST */
 body.debug {
-    background: red;
+    background: rgb(255, 0, 0);
 }
 
 /* SM - SMARTPHONE */
@@ -22,12 +22,5 @@ body.debug {
 @media screen and (min-width: 992px) {
     body.debug {
         background: yellowgreen;
-    }
-}
-
-/* XL - LARGE DESKTOP */
-@media screen and (min-width: 1201px) {
-    body.debug {
-        background: green;
     }
 }

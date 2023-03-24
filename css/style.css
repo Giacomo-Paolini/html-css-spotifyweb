@@ -103,6 +103,11 @@
     width: 100%;
 }
 
+.playlist h1 {
+    color: white;
+    margin-top: 1rem;
+}
+
 .playlist h3 {
     font-size: small;
     font-weight: 900;
@@ -110,6 +115,12 @@
 }
 
 .playlist h4 {
+    font-weight: 700;
+    color: var(--secondary-col);
+    margin-top: -1rem;
+}
+
+.playlist h5 {
     font-size: small;
     color: var(--secondary-col);
 }
@@ -178,15 +189,26 @@ footer .col {
 
 /* MD - TABLET */
 @media screen and (min-width: 768px) {
-
+    .recently-played .col {
+        width: calc(100% / 4);
+    }
+    .john-doe {
+        max-width: calc(100% / 2);
+    }
+    .famous-artists {
+        max-width: calc(100% / 2);
+    }
 }
 
 /* LG - DESKTOP */
 @media screen and (min-width: 992px) {
-
-}
-
-/* XL - LARGE DESKTOP */
-@media screen and (min-width: 1201px) {
-
+    .recently-played .col {
+        width: calc(100% / 6);
+    }
+    .john-doe {
+        max-width: calc(100% / 3);
+    }
+    .famous-artists {
+        max-width: calc(100% / 3);
+    }
 }
