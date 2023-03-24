@@ -7,8 +7,7 @@
 
 /************ SIDEBAR ************/
 .container-sidebar {
-    height: calc(100vh - 10vh);
-    width: 100vw;
+    height: calc(100vh - 80px);
 }
 
 .sidebar {
@@ -20,17 +19,12 @@
     align-items: center;
 }
 
-#nav-larger {
-    display: none;
-}
-
 .sidebar-larger {
     min-width: 200px;
     background-color: black;
-    padding-left: 1rem;
     z-index: 999;
-    justify-content: flex-start;
-    align-items: center;
+    padding: 1rem;
+    overflow: hidden;
 }
 
 .sidebar img {
@@ -50,6 +44,7 @@
 }
 
 .logo {
+    margin-bottom: 1rem;
     width: 9rem !important;
 }
 
@@ -97,7 +92,7 @@
 /************ CALL TO ACTION ************/
 .CTA {
     width: calc(100% - 48px);
-    z-index: 998;
+    z-index: 997;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -177,7 +172,7 @@ button {
 
 /************ FOOTER ************/
 .container-footer {
-    height: 10vh;
+    height: 80px;
     background-color: var(--secondary-col-light);
     padding: 0.5rem;
 }
@@ -215,11 +210,12 @@ footer .col {
 
 /************ MEDIA QUERY ************/
 
-/********* MEDIA QUERIES *********/
 /* XS - MOBILE FIRST */
-/* body.debug {
-    background: red;
-} */
+@media screen and (max-width: 479px) {
+    #nav-larger {
+        display: none;
+    }
+}
 
 /* SM - SMARTPHONE */
 @media screen and (min-width: 480px) {
@@ -227,12 +223,11 @@ footer .col {
         display: none;
     }
     #nav-larger {
-        display: block;
         min-width: 200px;
     }
     .CTA {
         width: calc(100% - 200px);
-        z-index: 998;
+        z-index: 997;
         position: fixed;
     }
 }
