@@ -27,7 +27,7 @@
 .sidebar-larger {
     min-width: 200px;
     background-color: pink;
-    padding: 1.5rem;
+    padding-left: 1.5rem;
     z-index: 999;
     justify-content: flex-start;
     align-items: center;
@@ -49,9 +49,28 @@
     width: 1.4rem;
 }
 
-#nav-larger img {
-    width: 1.5rem;
+.logo {
+    width: 9rem !important;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.sidebar-larger img {
+    width: 2.5rem;
     display: inline-block;
+}
+
+.sidebar-larger a {
+    margin-bottom: 1rem;
+    color: var(--secondary-col);
+    text-decoration: none;
+    font-size: 0.95em;
+}
+
+#home {
+    color: white;
+    border-left: 2px solid #8FD12C;
+    border
 }
 
 /************ CALL TO ACTION ************/

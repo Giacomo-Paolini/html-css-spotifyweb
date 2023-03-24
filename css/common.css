@@ -46,6 +46,18 @@
     vertical-align: center;
 }
 
+.height10 {
+    height: 10vh;
+}
+
+.height30 {
+    height: 30vh;
+}
+
+.height50 {
+    height: 50vh;
+}
+
 .width100 {
     width: 100%;
 }
