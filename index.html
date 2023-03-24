@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./css/debug.css">
     <title>Spotify Web</title>
 </head>
-<body class="debug">
+<body>
 
     <main>
         <!-- SIDEBAR -->
@@ -33,23 +33,29 @@
                     </div>
                 </nav>
 
-                <nav id="nav-larger" class="sidebar-larger flex justify-between align-items-center">
-                    <div class="flex flex-column height30">
+                <nav id="nav-larger" class="sidebar-larger align-items-center">
+                    <div class="flex flex-column justify-around height30 margin-bottom1">
                         <a href="#" class="flex align-items-center"><img src="./img/logo.svg" class="logo" alt="logo"></a>
-                        <a href="#" id="home" class="flex align-items-center"><img src="./img/home.svg" alt="home"> Home</a>
-                        <a href="#" class="flex align-items-center"><img src="./img/search.svg" alt="search"> Cerca</a>
-                        <a href="#" class="flex align-items-center"><img src="./img/libreria.svg" alt="library"> La tua libreria</a>
-                        <a href="#" class="flex align-items-center"><h3>PLAYLIST</h3></a>
-                        <a href="#" class="flex align-items-center"><i class="fa-solid fa-square-plus"></i> Crea Playlist</a>
+                        <div>
+                            <a href="#" id="home" class="flex align-items-center margin-bottom1"><img src="./img/home.svg" alt="home"> Home</a>
+                            <a href="#" class="flex align-items-center margin-bottom1"><img src="./img/search.svg" alt="search"> Cerca</a>
+                            <a href="#" class="flex align-items-center"><img src="./img/libreria.svg" alt="library"> La tua libreria</a>
+                        </div>
+                        <div class="flex flex-column height5">
+                            <a href="#" class="flex align-items-center white"><h3 class="white">PLAYLIST</h3></a>
+                            <a href="#" class="flex align-items-center"><i class="fa-solid fa-square-plus add-icon"></i> Crea Playlist</a>
+                        </div>
                     </div>
-                    <div class="flex flex-column height50">
-                        <h5>Nome Playlist</h5>
-                        <h5>Nome Playlist</h5>
-                        <h5>Nome Playlist</h5>
-                        <h5>Nome Playlist</h5>
-                        <h5>Nome Playlist</h5>
+                    <div class="flex flex-column height50 overflow-y padding-top1">
+                        <ul>
+                            <a href="#"><h5>Nome Playlist</h5></a>
+                            <a href="#"><h5>Nome Playlist</h5></a>
+                            <a href="#"><h5>Nome Playlist</h5></a>
+                            <a href="#"><h5>Nome Playlist</h5></a>
+                            <a href="#"><h5>Nome Playlist</h5></a>
+                        </ul>
                     </div>
-                    <div class="flex flex-column height10">
+                    <div class="flex flex-column height5">
                         <a href="#" class="flex align-items-center"><img src="./img/download.svg" id="icon-download" alt="download"> Installa app</a>
                         <hr>
                         <a href="#" class="flex align-items-center"><img src="./img/profile.svg" id="icon-profile" alt="profile"> John Doe</a>
@@ -61,7 +67,7 @@
 
                 <!-- CALL TO ACTION -->
                 <section class="CTA">
-                    <div class="bg-black flex flex-end padding-2">
+                    <div class="flex flex-end padding-2">
                         <button>EFFETTUA L'UPGRADE</button>
                     </div>
                 </section>
