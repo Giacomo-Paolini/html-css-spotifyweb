@@ -89,6 +89,14 @@
     max-width: 10rem;
 }
 
+.sidebar-larger a:hover {
+    color: white;
+}
+
+.sidebar-larger a :hover {
+    color: white;
+}
+
 /************ CALL TO ACTION ************/
 .CTA {
     width: calc(100% - 48px);
@@ -103,6 +111,11 @@
     border: 2px solid white;
     padding: 1rem;
     border-radius: 50px;
+    transition: 0.5s;
+}
+
+.CTA button:hover {
+    transform: scale(1.2);
 }
 
 /************ MAIN ************/
@@ -128,6 +141,10 @@ button {
     text-decoration: none;
     list-style-type: none;
     color: var(--secondary-col);
+}
+
+.central-nav li :hover {
+    color: white;
 }
 
 .green-line {
