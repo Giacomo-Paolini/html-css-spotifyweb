@@ -159,10 +159,40 @@ button {
 /* PLAYLIST */
 .playlist .col {
     width: calc(100% / 2);
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.playlist .fa-circle-play {
+    font-size: 100px;
+    color: white;
+}
+
+.playlist .fa-circle-play:hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.col:hover .overlay {
+    opacity: 1;
 }
 
 .playlist img {
     width: 100%;
+}
+
+.playlist col :hover {
+    background-color: red;
 }
 
 .playlist h1 {
@@ -193,6 +223,7 @@ button {
 }
 
 /************ FOOTER ************/
+
 .container-footer {
     height: 80px;
     background-color: var(--secondary-col-light);
@@ -208,22 +239,36 @@ footer h3 {
     font-size: small;
 }
 
-footer small {
-    font-size: smaller;
+footer a {
     color: var(--secondary-col);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 .footer-icon {
     color: var(--secondary-col);
-    font-size: 1rem;
+    font-size: 0.7rem;
 }
+
+.footer-icon:hover {
+    color: white;
+}
+
+.fa-circle-play:hover {
+    transform: scale(1.5);
+}
+
 
 .col-big-right i {
     color: white;
-    font-size: 1rem;
+    font-size: 0.7rem;
 }
 
 .audio-bar {
+    display: none;
     position: relative;
     width: 70px;
     background-color: var(--secondary-col);
@@ -233,22 +278,30 @@ footer small {
 }
 
 .audio-bar-min {
-    width: 15px;
+    display: none;
+    width: 20px;
     border: 2px solid white;
-    border-radius: 50px;
+    border-radius: 30px;
     margin-right: 0.5rem;
+}
+
+.circle:hover {
+    display: block;
+}
+
+.audio-bar-min:hover {
+    border: 2px solid #8FD12C;
 }
 
 .col-big-center i {
     color: white;
-    font-size: 1.5rem;
-    width: 60%;
+    font-size: 1.2rem;
 }
 
 .music-bar {
     position: relative;
     align-self: center;
-    width: 120px;
+    width: 80px;
     height: 3px;
     background-color: var(--secondary-col);
     border: 4px solid var(--secondary-col);
@@ -258,13 +311,19 @@ footer small {
 .music-bar-min {
     position: absolute;
     top: -2px;
-    width: 30px;
+    width: 15px;
     border: 2.5px solid white;
     border-radius: 50px;
 }
 
+.music-bar-min:hover {
+    border: 2px solid #8FD12C;
+
+}
+
 footer span {
     color: white;
+    font-size: 0.6em;
 }
 
 
@@ -290,6 +349,13 @@ footer span {
         z-index: 997;
         position: fixed;
     }
+    .music-bar {
+        width: 120px;
+    }
+    
+    .music-bar-min {
+        width: 22.5px;
+    }
 }
 
 /* MD - TABLET */
@@ -303,6 +369,29 @@ footer span {
     .famous-artists {
         max-width: calc(100% / 2);
     }
+    .footer-icon {
+        color: var(--secondary-col);
+        font-size: 0.7rem;
+    }
+    
+    .col-big-right i {
+        font-size: 1rem;
+    }
+    
+    .audio-bar {
+        display: block;
+    }
+    
+    .audio-bar-min {
+        display: block;
+    }
+    .music-bar {
+        width: 180px;
+    }
+    
+    .music-bar-min {
+        width: 33.75px;
+    }
 }
 
 /* LG - DESKTOP */
@@ -315,5 +404,12 @@ footer span {
     }
     .famous-artists {
         max-width: calc(100% / 3);
+    }
+    .music-bar {
+        width: 270px;
+    }
+    
+    .music-bar-min {
+        width: 50.65px;
     }
 }
