@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/debug.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
     <title>Spotify Web</title>
 </head>
 <body>
@@ -139,7 +140,7 @@
                         </div>
                         <h1 class="padding-1">Artisti più popolari</h1>
                         <h4 class="padding-1">Più ascolti, più accurati saranno i suggerimenti.</h4>
-                        <div class="famous-artists flex wrap align-items-start">
+                        <div class="famous-artists flex wrap align-items-start margin-bottom1">
                             <div class="col padding-1">
                                 <img src="./img/youg.jpeg" alt="">
                                 <h3 class="margin-top1  text-center">Lana Del Rey</h3>
@@ -156,24 +157,51 @@
     </main>
     
     <footer>
-        <div class="flex justify-between align-items-center container-footer">
-            <div class="col-big-footer flex justify-between gap align-items-center">
-                <div class="col">
+        <div class="flex justify-between align-items-center gap-1 container-footer">
+            <div class="col-big-left flex justify-between gap align-items-center">
+                <div>
                     <img src="./img/sinister.jpeg" alt="sinister">
                 </div>
-                <div class="col flex flex-column gap0">
+                <div>
                     <h3>Sinister</h3>
-                    <small>Brano</small>
-                    <small>Nome</small>
+                    <div class="flex wrap gap0">
+                        <small>Brano</small>
+                        <small>Nome</small>
+                    </div>
                 </div>
-                <div class="col-small flex flex-column gap">
+                <div class="flex flex-column gap">
                     <i class="fa-regular fa-heart footer-icon"></i>
                     <i class="fa-regular fa-folder footer-icon"></i>
                 </div>
             </div>
-            
-            <div></div>
-            <div></div>
+
+            <div class="col-big-center flex justify-between">
+                <div class="flex flex-column gap">
+                    <div class="flex">
+                        <i class="fa-solid fa-shuffle margin-right1"></i>
+                        <i class="fa-solid fa-backward-step margin-right1"></i>
+                        <i class="fa-regular fa-circle-play"></i>
+                        <i class="fa-solid fa-forward-step margin-left1"></i>
+                        <i class="fa-solid fa-rotate-right margin-left1"></i>
+                    </div>
+                    <div class="flex width60">
+                        <span class="margin-right1">0:25</span>
+                        <div class="music-bar">
+                            <div class="music-bar-min"></div>
+                        </div>
+                        <span class="margin-left1">4:35</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-big-right flex justify-between gap0 align-items-center">
+                <i class="fa-solid fa-list-ul"></i>
+                <i class="fa-solid fa-desktop margin-left0"></i>
+                <i class="fa-solid fa-volume-high margin-left0"></i>
+                <div class="audio-bar margin-left0">
+                    <div class="audio-bar-min"></div>
+                </div>
+            </div>
         </div>
     </footer>
 

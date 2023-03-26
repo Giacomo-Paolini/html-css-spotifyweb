@@ -187,6 +187,11 @@ button {
     color: var(--secondary-col);
 }
 
+.famous-artists img {
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
 /************ FOOTER ************/
 .container-footer {
     height: 80px;
@@ -195,7 +200,7 @@ button {
 }
 
 footer img {
-    width: 50px;
+    width: 40px;
 }
 
 footer h3 {
@@ -210,20 +215,58 @@ footer small {
 
 .footer-icon {
     color: var(--secondary-col);
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
-footer .col {
-    width: calc(100% / 3);
+.col-big-right i {
+    color: white;
+    font-size: 1rem;
 }
 
-.col-small {
-    width: 10%;
+.audio-bar {
+    position: relative;
+    width: 70px;
+    background-color: var(--secondary-col);
+    border: 2px solid var(--secondary-col);
+    border-radius: 50px;
+    margin-right: 0.5rem;
 }
 
-.col-big-footer {
-    width: calc(100% / 3);
+.audio-bar-min {
+    width: 15px;
+    border: 2px solid white;
+    border-radius: 50px;
+    margin-right: 0.5rem;
 }
+
+.col-big-center i {
+    color: white;
+    font-size: 1.5rem;
+    width: 60%;
+}
+
+.music-bar {
+    position: relative;
+    align-self: center;
+    width: 120px;
+    height: 3px;
+    background-color: var(--secondary-col);
+    border: 4px solid var(--secondary-col);
+    border-radius: 50px;
+}
+
+.music-bar-min {
+    position: absolute;
+    top: -2px;
+    width: 30px;
+    border: 2.5px solid white;
+    border-radius: 50px;
+}
+
+footer span {
+    color: white;
+}
+
 
 /************ MEDIA QUERY ************/
 
